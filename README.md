@@ -2,8 +2,6 @@
 
 - CQRS (Command Query Responsibility Segregation) is a software architecture pattern that aims to improve performance by separating the responsibilities of writing (command) and querying (query), but it introduces more complexity along with it.
 
----
-
 - While developing this application, I separated the get (query) requests and the create/update/delete (command) operations, and stored them in different databases. I stored the commands in a relational database, specifically PostgreSQL. For the queries, I read from Elasticsearch. I implemented asynchronous operations between the two databases using Apache Kafka.
 
 ## CQRS Architecture
